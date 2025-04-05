@@ -1,19 +1,23 @@
 // program to extract value as an array from an array of objects
 
-const array1 = [1, 3, 5, 6];
-const array2 = [1, 3, 5, 6];
-function compare(array1,array2){
-    if(array1.length != array2.length){
+const array1 = [1, 3, 5, 8];
+const array2 = [11, 3, 5, 2];
+
+function areArraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
         return false;
-        }else{
-        for(let i=0;i<array1.length;i++){
-             if(array1[i] !== array2[i]){
-               return false;
-             }
-        }
-       return true;
     }
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            return false;
+        }
+    }
+    return true;
 }
 
-console.log(compare(array1,array2));
+if (areArraysEqual(array1, array2)) {
+    console.log("The arrays are identical.");
+} else {
+    console.log("The arrays are different.");
+}
 
