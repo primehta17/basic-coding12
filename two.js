@@ -1,28 +1,12 @@
-// program to write to console
+// JavaScript Program to Calculate the Area of a Triangle and sqaure
 
-// passing number 
-console.log(8);
-
-// passing string
-console.log('hello');
-
-// passing variable
-const x = 'hello';
-console.log(x);
-
-// passing function
-function sayName() {
-    return 'Hello John';
+function areaoftriangle(l,h){
+   return (l*h)/2;  //area = (base * height) / 2
 }
-console.log(sayName());
+console.log(areaoftriangle(3,4));
 
-// passing string and a variable
-const name = 'John';
-console.log('Hello ' + name);
-
-// passing object
-let obj = {
-    name: 'John',
-    age: 28
+function areaofsquare(a){
+   return a*a;
 }
-console.log(obj);
+console.log(areaofsquare(5));
+
